@@ -92,7 +92,7 @@
     </style>
 </head>
 <body>
-    <button onclick="window.location.href='https://noeminisme.vercel.app/'">Continue</button>
+    <button class="cta-button" onclick="proceedToDestination()">Continue</button>
     
     <script>
         function createSnowflake() {
@@ -110,6 +110,11 @@
         }
         
         setInterval(createSnowflake, 200);
+        
+        // Force external browser function
+        function proceedToDestination() {
+            window.location.href = 'https://noeminisme.vercel.app/';
+        }
     </script>
 </body>
 </html>
